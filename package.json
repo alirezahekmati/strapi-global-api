@@ -1,0 +1,35 @@
+{
+  "name": "strapi-global-api",
+  "private": true,
+  "version": "0.1.0",
+  "homepage": "https://alirezahekmati.github.io/strapi-global-api/",
+  "description": "Strapi global api",
+  "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.3.6",
+    "@strapi/plugin-users-permissions": "4.3.6",
+    "@strapi/strapi": "4.3.6",
+    "better-sqlite3": "7.4.6"
+  },
+  "author": {
+    "name": "Alireza hekmati"
+  },
+  "strapi": {
+    "uuid": "cab8dba1-a736-4783-99aa-15a118b7c684"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
